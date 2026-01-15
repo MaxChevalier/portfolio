@@ -1,0 +1,98 @@
+[
+    {
+        "name": "React",
+        "category": "framework"
+    },
+    {
+        "name": "Angular",
+        "category": "framework"
+    },
+    {
+        "name": "Django",
+        "category": "framework"
+    },
+    {
+        "name": "Django Rest",
+        "category": "framework"
+    },
+    {
+        "name": "Nest JS",
+        "category": "framework"
+    },
+    {
+        "name": "Next JS",
+        "category": "framework"
+    },
+    {
+        "name": "TypeScript",
+        "category": "language"
+    },
+    {
+        "name": "JavaScript",
+        "category": "language"
+    },
+    {
+        "name": "Python",
+        "category": "language"
+    },
+    {
+        "name": "Java",
+        "category": "language"
+    },
+    {
+        "name": "C#",
+        "category": "language"
+    },
+    {
+        "name": "SQL",
+        "category": "language"
+    },
+    {
+        "name": "R",
+        "category": "language"
+    },
+    {
+        "name": "Communication",
+        "category": "softSkill"
+    },
+    {
+        "name": "Teamwork",
+        "category": "softSkill"
+    },
+    {
+        "name": "Autonomie",
+        "category": "softSkill"
+    },
+    {
+        "name": "Gestion du temps",
+        "category": "softSkill"
+    },
+    {
+        "name": "Esprit critique",
+        "category": "softSkill"
+    },
+    {
+        "name": "Adaptabilité",
+        "category": "softSkill"
+    },
+    {
+        "name": "Résolution de problèmes",
+        "category": "softSkill"
+    },
+    {
+        "name": "Leadership",
+        "category": "softSkill"
+    },
+    {
+        "name": "Créativité",
+        "category": "softSkill"
+    },
+    {
+        "name": "GitHub Actions",
+        "category": "ciCd"
+    },
+    {
+        "name": "Docker",
+        "category": "ciCd"
+    }
+]

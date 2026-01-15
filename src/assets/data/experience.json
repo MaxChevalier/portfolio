@@ -1,0 +1,100 @@
+[
+    {
+        "company": "RTE, Réseau de Transport d'Électricité",
+        "role": "Développeur Full Stack",
+        "type": "Stage",
+        "startDate": "2023-07-03",
+        "endDate": "2023-09-30",
+        "missions": [
+            {
+                "name": "Reprise et maintenance d'une application régionale interne de gestion et planification des roulements 3/8.",
+                "startDate": "2023-07-03",
+                "endDate": "2023-09-30",
+                "description": "L'application, développée en Angular et django (python), permet de gérer les plannings des agents en charge de la surveillance des lignes à haute tension. Cette mission est effectuée seule. L'application était déjà en production, mais n'était plus maintenue depuis plusieurs mois.",
+                "tasks": [
+                    "Prise en main du code existant et compréhension des fonctionnalités déjà implémentées (aucune documentation n'était disponible au début du stage).",
+                    "Correction de bugs signalés par les utilisateurs.",
+                    "Stabilisation de l'application (crash et lenteurs fréquents).",
+                    "Fiabilisation des données affichées (certaine données étaient erronées ou manquantes).",
+                    "Ajout de nouvelles fonctionnalités demandées par les utilisateurs",
+                    "Déploiement de l'application sur les serveurs internes de RTE."
+                ]
+            }
+        ]
+    },
+    {
+        "company": "RTE, Réseau de Transport d'Électricité",
+        "role": "Développeur Full Stack",
+        "type": "Alternance",
+        "startDate": "2023-10-02",
+        "endDate": "2026-09-30",
+        "missions": [
+            {
+                "name": "Reprise et maintenance d'une application régionale interne de gestion et planification des roulements 3/8.",
+                "startDate": "2023-10-02",
+                "endDate": "2024-08-31",
+                "description": "Poursuite de l'application développée lors du stage, L'application, développée en Angular et django (python), permet de gérer les plannings des agents en charge de la surveillance des lignes à haute tension. Cette mission est effectuée seule dans la majeur partie de la durée de la mission puis en équipe de 2 développeurs pour quelques mois.",
+                "tasks": [
+                    "Rédaction du cahier des charges pour la refonte de l'application en adéquation avec le projet d'entreprise qui modifie la gestion du métier.",
+                    "Correction de bugs signalés par les utilisateurs.",
+                    "Stabilisation de l'application (crash et lenteurs fréquents).",
+                    "Fiabilisation des données affichées (certaine données étaient erronées ou manquantes).",
+                    "Ajout de nouvelles fonctionnalités demandées par les utilisateurs",
+                    "Déploiement de l'application sur les serveurs internes de RTE.",
+                    "Modernisation de l'interface utilisateur pour améliorer l'ergonomie et l'expérience utilisateur.",
+                    "Mise en place de tests automatisés pour garantir la qualité du code et faciliter les futures maintenances.",
+                    "Mise en place d'un système de suivi du projet avec un tableau kanban.",
+                    "Documentation de l'application pour faciliter la prise en main par de futurs développeurs.",
+                    "Maintien en condition opérationnelle de l'application.",
+                    "Présentation de l'application au national RTE afin d'envisager un déploiement à plus grande échelle."
+                ]
+            },
+            {
+                "name": "Développement d'une application nationale interne au coeur du métier.",
+                "startDate": "2024-09-02",
+                "endDate": "2025-09-30",
+                "description": "Intégration dans une équipe agile de 8 développeurs et 3 product owners pour le développement d'une application interne au métier de RTE. L'application, développée en Angular et django (python), a pour but de centraliser et faciliter l'accès aux différentes données métiers utilisées par les agents.",
+                "tasks": [
+                    "Participation aux cérémonies agiles (daily, sprint planning, revu de sprint).",
+                    "Correction de bugs signalés par les utilisateurs.",
+                    "Stabilisation de l'application (crash et lenteurs fréquents).",
+                    "Fiabilisation des données affichées (certaine données étaient erronées ou manquantes).",
+                    "Ajout de nouvelles fonctionnalités demandées par les utilisateurs",
+                    "Modernisation de l'interface utilisateur pour améliorer l'ergonomie et l'expérience utilisateur.",
+                    "Mise en place de tests automatisés pour garantir la qualité du code et faciliter les futures maintenances.",
+                    "Documentation de l'application pour faciliter la prise en main par de futurs développeurs."
+                ]
+            },
+            {
+                "name": "Développement d'une nouvelle application régionale interne de modification de données en masse.",
+                "startDate": "2025-10-02",
+                "endDate": "2025-12-31",
+                "description": "Développement seul d'une application interne au métier de RTE. L'application, développée en R shiny, a pour but de permettre aux agents de modifier en masse des données métiers via une interface conviviale.",
+                "tasks": [
+                    "Rédaction du cahier des charges en collaboration avec les utilisateurs finaux.",
+                    "Développement de l'application en R shiny.",
+                    "Documentation de l'application pour faciliter la prise en main par de futurs développeurs.",
+                    "Déploiement de l'application sur les serveurs internes de RTE.",
+                    "Présentation de l'application aux utilisateurs finaux et recueil de leurs retours.",
+                    "Maintien en condition opérationnelle de l'application."
+                ]
+            },
+            {
+                "name": "Développement d'une nouvelle application régionale interne de centralisation des procédure métier.",
+                "startDate": "2026-01-02",
+                "endDate": "maintenant",
+                "description": "Développement seul d'une application interne au métiers de RTE. L'application, développée en Angular et django (python), a pour but de centraliser les différentes procédures métier afin de faciliter l'accès à l'information pour les agents.",
+                "tasks": [
+                    "Rédaction du cahier des charges en collaboration avec les utilisateurs finaux.",
+                    "Développement de l'application en Angular et django (python).",
+                    "Documentation de l'application pour faciliter la prise en main par de futurs développeurs.",
+                    "Mise en place de tests automatisés pour garantir la qualité du code et faciliter les futures maintenances.",
+                    "Présentation de l'application aux utilisateurs finaux et recueil de leurs retours.",
+                    "Maintien en condition opérationnelle de l'application.",
+                    "Déploiement de l'application sur les serveurs internes de RTE.",
+                    "Automatisation des CI/CD pour faciliter les déploiements futurs."
+                ]
+            }
+        ]
+    }
+]

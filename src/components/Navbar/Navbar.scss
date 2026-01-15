@@ -1,0 +1,28 @@
+@use '../../styles/Color.scss' as *;
+
+
+.bar {
+    display: flex;
+    gap: 1.5rem;
+    padding: .5rem 2rem;
+
+    a {
+        color: $color1;
+        font-size: 1.25rem;
+        border-radius: .5rem;
+        padding: 3px 5px;
+        transition: all 0.3s ease;
+
+        &.active {
+            box-shadow: 0px 0px 5px 5px $color2;
+            background-color: $color2;
+            color: $color3;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 5px 5px $color1;
+            background-color: $color1;
+            color: $color3;
+        }
+    }
+}

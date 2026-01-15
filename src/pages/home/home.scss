@@ -1,0 +1,72 @@
+@use "../../styles/Color.scss" as *;
+
+
+.f-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-title {
+  width: 40vw;
+}
+
+.main-section {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+hr {
+  width: 90%;
+  height: 1px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    transparent,
+    $color6,
+    $color6,
+    transparent
+  );
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $color1;
+  text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+a{
+    color: $color1;
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,67 @@
+[
+   {
+        "title" : "Abyssal Dungeon",
+        "date" : "2022-10-01",
+        "status" : "En cours",
+        "img" : "data/projectImg/AbyssalDungeon.svg",
+        "type" : "Projet d'étude",
+        "description" : "Abyssal Dungeon est un jeu de type RPG Rogue-lite en 2D. Le joueur incarne un aventurier qui doit progresser et explorer un donjon infini. Le but du jeu est de survivre le plus longtemps possible en tuant les monstres et en récupérant des objets pour améliorer son équipement.",
+        "role" : "Au sein de l'équipe, j'occupe un rôle polyvalent. En effet, je suis amené à développer des fonctionnalités du jeu, superviser le travail des autres développeurs, et je suis également responsable de l'histoire du jeu.",
+        "technologies" : ["Unity", "C#"]	
+    },
+    {
+        "title" : "own magic survivor",
+        "date" : "2022-01-01",
+        "status" : "En cours",
+        "img" : "data/projectImg/InProgress.png",
+        "type" : "Projet personnel",
+        "description" : "Own Magic Survivor est un jeu de survie en 2D. Le joueur incarne un aventurier qui doit survivre dans un monde hostile. Le but du jeu est de survivre le plus longtemps possible en tuant des monstres pour monter de niveau. Le joueur peut personnaliser sa magie grâce à des améliorations qu'il obtient en montant de niveau.",
+        "role" : "Je développe ce jeu en solo, ce qui signifie que je suis en charge de la programmation, de la création des éléments graphiques (assets), ainsi que de la composition de la musique. Au sein de ce projet, mon objectif principal est d'améliorer mes compétences dans tous les domaines de la conception de jeux.",
+        "technologies" : ["Unity", "C#"]
+    },
+    {
+        "title" : "puissance 4",
+        "date" : "2021-11-01",
+        "status" : "Terminé",
+        "img" : "data/projectImg/puissance4.png",
+        "type" : "Projet d'étude",
+        "description" : "Puissance 4 est un jeu de plateau dans lequel le but du jeu est d'aligner 4 pions de sa propre couleur. Le jeu se joue à deux joueurs. Ce projet a été réalisé dans le cadre de mes études. La particularité de ce projet résidait dans le fait que le jeu pouvait être joué en réseau tout en étant compatible avec les jeux Puissance 4 créés par d'autres groupes.",
+        "role" : "Au sein de l'équipe, j'étais en charge de la partie réseau du jeu. J'ai donc dû mettre en place un système de connexion au serveur, de synchronisation des joueurs et de gestion des parties.",
+        "technologies" : ["Java"],
+        "github" : "https://github.com/MaxChevalier/Pussance4"
+    },
+    {
+        "title" : "Poké-Hide",
+        "date" : "2023-04-01",
+        "status" : "Terminé",
+        "img" : "data/projectImg/pokéhide.jpg",
+        "type" : "Projet d'étude",
+        "description" : "Poké-Hide est un jeu de quiz compétitif en ligne. Le but du jeu est de trouver le plus rapidement possible le Pokémon caché dans l'image parmi un choix de 4 réponses. Le jeu se joue jusqu'à 8 joueurs. Ce projet a été réalisé dans le cadre d'un projet d'études.",
+        "role" : "Au sein de l'équipe, j'étais en charge de la partie réseau du jeu. J'ai donc dû mettre en place un système de connexion au serveur, de synchronisation des joueurs et de gestion des parties. De plus, j'ai mis en place un système de classement des joueurs. Enfin, j'ai développé un système de génération de noms de Pokémon fictifs pour les mauvaises réponses.",
+        "technologies" : ["Unity", "C#"],
+        "github" : "https://github.com/MaxChevalier/Pok-Hide"
+    },
+    {
+        "title" : "CAT'S PUZZLE AVENTURE",
+        "date" : "2024-05-14",
+        "status" : "Terminé",
+        "img" : "data/projectImg/cats-puzzle-aventure.jpg",
+        "type" : "Projet d'étude",
+        "description" : "CAT'S PUZZLE AVENTURE est un jeu de puzzle en 2D où le joueur doit construire un labyrinthe pour ralentir un chat qui doit rejoindre ca gamelle. Le joueur place des obstacles et des pièges pour empêcher le chat d'atteindre sa nourriture. Ce projet a été réalisé dans le cadre d'un projet d'études.",
+        "role" : "Au sein de l'équipe, j'étais en charge de l'affichage du jeu ainsi que la réalisation de l'ia du chat (models A*). J'ai également participé à la conception des niveaux et à la création des éléments graphiques.",
+        "technologies" : ["Angular", "TypeScript", "Express", "Node.js", "Sequelize", "SQLite"],
+        "github" : "https://github.com/MaxChevalier/CAT-S-PUZZLE-AVENTURE",
+        "link" : "https://maxchevalier.github.io/CAT-S-PUZZLE-AVENTURE"
+    },
+    {
+        "github" : "https://github.com/MaxChevalier/mine-Sweeper-4D",
+        "title" : "Mine Sweeper 4D",
+        "date" : "2024-04-26",
+        "status" : "Terminé",
+        "img" : "data/projectImg/mine-sweeper-4d.jpg",
+        "type" : "Projet d'étude / Personnel",
+        "technologies" : ["Python", "Pygame"],
+        "description" : "Mine Sweeper 4D est une version innovante du célèbre jeu Démineur, étendue à quatre dimensions. Le joueur doit naviguer dans un espace 4D pour localiser et marquer toutes les mines sans les déclencher. Ce projet a été réalisé dans le cadre de mes études, avec l'objectif de repousser les limites du gameplay traditionnel en explorant des concepts multidimensionnels.",
+        "role" : "J'ai développé ce projet en solo, ce qui m'a permis de gérer tous les aspects du développement, de la conception à la programmation en passant par les tests. Ce projet m'a offert l'opportunité d'approfondir mes compétences en programmation Python et en utilisation de la bibliothèque Pygame, tout en explorant des idées novatrices dans le domaine des jeux vidéo."
+    }
+]

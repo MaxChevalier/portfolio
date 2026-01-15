@@ -1,0 +1,9 @@
+@use "./styles/Color.scss" as *;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $color1;
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "date": "2021-07-01",
+        "title": "Obtention du BAC",
+        "description": "Réussite de l’examen du Baccalauréat, marquant l’aboutissement de mon parcours secondaire et le développement de compétences fondamentales telles que la rigueur, l’organisation et l’autonomie."
+    },
+    {
+        "date": "2021-10-01",
+        "title": "Études en informatique à Ynov",
+        "dateFin": "2026-09-30",
+        "description": "Cursus complet de 5 ans en informatique à Ynov, comprenant un Bachelor (3 ans) et un Master (2 ans). Spécialisation en développement web, avec un apprentissage orienté vers la conception d’applications web, les technologies modernes et les projets pratiques."
+    },
+    {
+        "date": "2023-07-03",
+        "dateFin": "2023-09-29",
+        "title": "Stage Développeur Full Stack chez RTE",
+        "description": "Maintenance et refonte d’un logiciel de planification et de gestion des roulements en 3×8. Analyse des besoins utilisateur, correction d’anomalies et optimisation des performances. Participation à la modernisation de l’architecture applicative et de l’interface utilisateur. Mise en production et maintien en condition opérationnelle de l’application."
+    },
+    {
+        "date": "2023-10-02",
+        "dateFin": "2026-09-30",
+        "title": "Alternance Développeur Full Stack chez RTE",
+        "description": "Maintenance et refonte d’un logiciel de planification et de gestion des roulements en 3×8 :<ul><li>Analyse des besoins utilisateur, correction d’anomalies et optimisation des performances</li><li></li><li>Participation à la modernisation de l’architecture applicative et de l’interface utilisateur</li><li>Mise en production et maintien en condition opérationnelle</ul>Développement d’un projet national au cœur du métier :<ul><li>Travail en équipe agile (9 développeurs, 3 Product Owners)</li><li>Participation aux cérémonies agiles (daily meetings, sprint planning, revues, rétrospectives)</li><li>Correction d’anomalies et développement de nouvelles fonctionnalités</ul>Conception d’applications de traitement de données :<ul><li>Étude des besoins, rédaction du cahier des charges et définition de l’architecture</li><li>Traitement et automatisation de modifications de DataFrames</li></ul>"
+    },
+    {
+        "date": "2026-09-30",
+        "title": "Obtention du Master en développement (prévue)",
+        "description": "Validation d’un diplôme Bac+5 spécialisé en développement."
+    }
+]
