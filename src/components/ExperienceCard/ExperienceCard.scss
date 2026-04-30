@@ -1,64 +1,80 @@
 @use "../../styles/Color.scss" as *;
 
-
-.page {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-}
-
-.list {
+.card {
+  background: linear-gradient(135deg, rgba(6, 6, 65, 0.6), rgba(0, 0, 36, 0.4));
+  border: 1px solid rgba(200, 200, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.75rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 
-.card {
-  background: $color4;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 0 10px $color3;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent, rgba(200, 200, 255, 0.05), transparent);
+    pointer-events: none;
+  }
 
-  header {
-    margin-bottom: 1rem;
+  &:hover {
+    border-color: rgba(200, 200, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(200, 200, 255, 0.1);
+    transform: translateY(-4px);
   }
 }
 
-.role {
-  font-weight: bold;
-  color: $color1;
+.curved {
+  position: relative;
+  margin: -1.75rem -1.75rem 1.75rem -1.75rem;
+  padding: 1.75rem;
+  background: linear-gradient(135deg, rgba(200, 200, 255, 0.1), rgba(100, 100, 200, 0.05));
+  border-bottom: 1px solid rgba(200, 200, 255, 0.1);
+  border-radius: 12px 12px 0 0;
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    color: $color1;
+    line-height: 1.3;
+  }
+
+  .company {
+    font-size: 0.95rem;
+    color: $color2;
+    margin: 0 0 0.75rem 0;
+    font-weight: 500;
+  }
 }
 
 .date {
-  font-size: 0.9rem;
-  opacity: 0.7;
+  font-size: 0.85rem;
+  color: $color2;
+  opacity: 0.8;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.role {
+  font-weight: 600;
+  color: $color1;
+  margin-bottom: 0.75rem;
 }
 
 .mission {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   position: relative;
-
-  h3 {
-    margin-bottom: 0.25rem;
-  }
-
-  ul {
-    margin-top: 0.5rem;
-    padding-left: 1.2rem;
-
-    li {
-      list-style: disc;
-      margin-bottom: 0.25rem;
-    }
-  }
 
   &:not(:first-child) {
     margin-top: 1.5rem;
+    padding-top: 1.5rem;
 
     &::before {
       content: "";
@@ -70,26 +86,79 @@
       background: linear-gradient(
         to right,
         transparent,
-        $color6,
-        $color6,
+        rgba(200, 200, 255, 0.2),
         transparent
       );
+    }
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    color: $color1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  ul {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.5rem;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 0.5rem;
+      color: $color2;
+      line-height: 1.5;
+
+      &::before {
+        content: "→";
+        position: absolute;
+        left: -1.25rem;
+        color: $color2;
+        opacity: 0.6;
+      }
     }
   }
 }
 
 .missionDate {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  color: $color2;
   opacity: 0.7;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
-.curved {
-  position: relative;
-  background: $color5;
-  margin: -1.5rem -1.5rem 0rem -1.5rem;
-  padding: 1.5rem 1.5rem 2rem 1.5rem;
-  border-bottom-left-radius: 50% 1.5rem;
-  border-bottom-right-radius: 50% 1.5rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(200, 200, 255, 0.2),
+    transparent
+  );
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.25rem;
+  }
+
+  .curved {
+    margin: -1.25rem -1.25rem 1.25rem -1.25rem;
+    padding: 1.25rem;
+
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+
+  .mission h3 {
+    font-size: 0.95rem;
+  }
 }

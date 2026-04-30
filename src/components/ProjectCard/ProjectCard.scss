@@ -1,110 +1,61 @@
 @use "../../styles/Color.scss" as *;
 
-
-.page {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-}
-
-.list {
+.card {
+  background: linear-gradient(135deg, rgba(6, 6, 65, 0.6), rgba(0, 0, 36, 0.4));
+  border: 1px solid rgba(200, 200, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.75rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-
-.card {
-  background: $color4;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 0 10px $color3;
-
-  header {
-    margin-bottom: 1rem;
-  }
-}
-
-.role {
-  font-weight: bold;
-  color: $color1;
-}
-
-.date {
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-.mission {
-  padding-top: 1.5rem;
+  height: 100%;
+  overflow: hidden;
   position: relative;
 
-  h3 {
-    margin-bottom: 0.25rem;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent, rgba(200, 200, 255, 0.05), transparent);
+    pointer-events: none;
   }
 
-  ul {
-    margin-top: 0.5rem;
-    padding-left: 1.2rem;
+  &:hover {
+    border-color: rgba(200, 200, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(200, 200, 255, 0.1);
+    transform: translateY(-4px);
 
-    li {
-      list-style: disc;
-      margin-bottom: 0.25rem;
+    .status {
+      transform: translateX(2px);
     }
   }
-
-  &:not(:first-child) {
-    margin-top: 1.5rem;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background: linear-gradient(
-        to right,
-        transparent,
-        $color6,
-        $color6,
-        transparent
-      );
-    }
-  }
-}
-
-.missionDate {
-  font-size: 0.85rem;
-  opacity: 0.7;
 }
 
 .curved {
   position: relative;
-  background: $color5;
-  margin: -1.5rem -1.5rem 0rem -1.5rem;
-  padding: 1.5rem 1.5rem 2rem 1.5rem;
-  border-bottom-left-radius: 50% 1.5rem;
-  border-bottom-right-radius: 50% 1.5rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
+  margin: -1.75rem -1.75rem 1.75rem -1.75rem;
+  padding: 1.75rem;
+  background: linear-gradient(135deg, rgba(200, 200, 255, 0.1), rgba(100, 100, 200, 0.05));
+  border-bottom: 1px solid rgba(200, 200, 255, 0.1);
+  border-radius: 12px 12px 0 0;
 
-hr {
-  width: 90%;
-  height: 1px;
-  border: none;
-  background: linear-gradient(
-    to right,
-    transparent,
-    $color6,
-    $color6,
-    transparent
-  );
+  h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.75rem 0;
+    color: $color1;
+    line-height: 1.3;
+  }
+
+  p {
+    margin: 0.5rem 0 1rem 0;
+    color: $color2;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
 }
 
 .f-r-sp {
@@ -112,22 +63,146 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: $color2;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.status {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+
+  &.Terminé,
+  &.Termié {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+  }
+
+  &.En-cours {
+    background: rgba(255, 152, 0, 0.2);
+    color: #FFA500;
+    border: 1px solid rgba(255, 152, 0, 0.3);
+  }
+
+  &.Planifié {
+    background: rgba(33, 150, 243, 0.2);
+    color: #2196F3;
+    border: 1px solid rgba(33, 150, 243, 0.3);
+  }
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: $color1;
+  margin: 1.5rem 0 0.75rem 0;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
   list-style: none;
   padding: 0;
+  margin: 1rem 0 0 0;
 
   .skill-item {
-    background: rgba(0, 255, 255, 0.1);
-    padding: 0.75rem 1.25rem;
-    border-radius: 0.5rem;
+    background: linear-gradient(135deg, rgba(200, 200, 255, 0.15), rgba(200, 200, 255, 0.05));
+    color: $color1;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
     font-weight: 600;
-    display: flex;
+    font-size: 0.85rem;
+    border: 1px solid rgba(200, 200, 255, 0.2);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+
+    &:hover {
+      background: rgba(200, 200, 255, 0.25);
+      border-color: rgba(200, 200, 255, 0.4);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+
+  a {
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    background: linear-gradient(135deg, $color2, #a8a8ff);
+    color: $color3;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(200, 200, 255, 0.3);
+    }
+  }
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(200, 200, 255, 0.2),
+    transparent
+  );
+  margin: 1.5rem 0;
+}
+
+.role {
+  font-weight: 500;
+  color: $color1;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.25rem;
+  }
+
+  .curved {
+    margin: -1.25rem -1.25rem 1.25rem -1.25rem;
+    padding: 1.25rem;
+
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+
+  .f-r-sp {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

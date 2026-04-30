@@ -1,32 +1,41 @@
+@use "../../styles/Color.scss" as *;
+
 .competences-section {
   padding: 2rem;
-  max-width: 700px;
+  max-width: 100%;
   margin: auto;
-  font-family: system-ui, sans-serif;
 }
 
 .competences-nav {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 
   button {
     background: transparent;
-    border: none;
-    padding: 0.5rem 1rem;
+    border: 2px solid rgba(200, 200, 255, 0.3);
+    padding: 0.75rem 1.5rem;
     font-weight: 600;
-    color: #aaa;
+    color: $color2;
     cursor: pointer;
-    border-bottom: 2px solid transparent;
-    transition: color 0.3s ease, border-color 0.3s ease;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
 
     &.active {
-      color: #00fff7;
-      border-color: #00fff7;
+      color: $color3;
+      background: linear-gradient(135deg, $color2, #a8a8ff);
+      border-color: $color2;
+      box-shadow: 0 4px 12px rgba(200, 200, 255, 0.25);
     }
 
     &:hover:not(.active) {
-      color: #4fd1ff;
+      border-color: $color2;
+      color: $color1;
+      background: rgba(200, 200, 255, 0.05);
     }
   }
 }
@@ -37,15 +46,57 @@
   gap: 1rem;
   list-style: none;
   padding: 0;
+  justify-content: center;
 
   .skill-item {
-    background: rgba(0, 255, 255, 0.1);
-    padding: 0.75rem 1.25rem;
-    border-radius: 0.5rem;
+    background: linear-gradient(135deg, rgba(200, 200, 255, 0.15), rgba(200, 200, 255, 0.05));
+    border: 1px solid rgba(200, 200, 255, 0.25);
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
     font-weight: 600;
-    color: white;
+    color: $color1;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+
+    &:hover {
+      background: linear-gradient(135deg, rgba(200, 200, 255, 0.25), rgba(200, 200, 255, 0.1));
+      border-color: $color2;
+      box-shadow: 0 4px 12px rgba(200, 200, 255, 0.15);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .competences-section {
+    padding: 1rem;
+  }
+
+  .competences-nav {
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  .skills-list {
+    gap: 0.75rem;
+
+    .skill-item {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.85rem;
+    }
   }
 }
