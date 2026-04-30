@@ -1,28 +1,70 @@
 @use '../../styles/Color.scss' as *;
 
-
 .bar {
-    display: flex;
-    gap: 1.5rem;
-    padding: .5rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 16, 0.7);
+  border-bottom: 1px solid rgba(200, 200, 255, 0.1);
+
+  a {
+    color: $color1;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    letter-spacing: 0.5px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, $color2, $color1);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      color: $color2;
+
+      &::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+
+    &.active {
+      color: $color3;
+      background: linear-gradient(135deg, $color2, #a8a8ff);
+      box-shadow: 0 4px 12px rgba(200, 200, 255, 0.25);
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bar {
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
 
     a {
-        color: $color1;
-        font-size: 1.25rem;
-        border-radius: .5rem;
-        padding: 3px 5px;
-        transition: all 0.3s ease;
-
-        &.active {
-            box-shadow: 0px 0px 5px 5px $color2;
-            background-color: $color2;
-            color: $color3;
-        }
-
-        &:hover {
-            box-shadow: 0px 0px 5px 5px $color1;
-            background-color: $color1;
-            color: $color3;
-        }
+      font-size: 0.9rem;
+      padding: 0.625rem 1rem;
     }
+  }
 }

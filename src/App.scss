@@ -1,9 +1,69 @@
 @use "./styles/Color.scss" as *;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: $color1;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $color1;
+  background: linear-gradient(135deg, $color3 0%, #000030 50%, $color3 100%);
+  min-height: 100vh;
+}
+
+main {
+  min-height: calc(100vh - 200px);
+  padding-bottom: 4rem;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color2;
+  border-radius: 5px;
+
+  &:hover {
+    background: $color1;
+  }
+}
+
+/* Global Link Styles */
+a {
+  color: $color1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color2;
+  }
+}
+
+/* Responsive Typography */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.6;
 }
